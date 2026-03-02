@@ -1,0 +1,15 @@
+# Minimal resume/landing theme config placeholder
+menu:
+  Home: /
+  About: /about/
+  Projects: /projects/
+  Contact: /contact/
+
+profile:
+  name: "晏瑞然"
+  title: "Student & developer, turning ideas into projects."
+  location: ""
+  email: ""
+  github: "https://github.com/RuiranYan"
+  linkedin: ""
+  description: "A minimal personal homepage powered by Hexo."

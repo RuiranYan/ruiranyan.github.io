@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title><%= config.title %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #f3f4f6;
+      --panel: #ffffff;
+      --border-subtle: #e5e7eb;
+      --fg: #111827;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --accent-soft: #dbeafe;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",system-ui,sans-serif;
+      background: radial-gradient(circle at top, #e5edff 0, #f9fafb 45%, #f3f4f6 100%);
+      color: var(--fg);
+      min-height: 100vh;
+    }
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 24px 18px 48px;
+    }
+    @media (min-width: 768px) {
+      .page { padding: 28px 24px 64px; }
+    }
+    header {
+      margin-bottom: 20px;
+    }
+    .brand-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .brand-mark {
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      background: conic-gradient(from 140deg, #2563eb, #4f46e5, #0ea5e9, #2563eb);
+      border: 2px solid #fff;
+      box-shadow: 0 4px 10px rgba(37,99,235,.25);
+    }
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+    .brand-name {
+      font-weight: 600;
+      letter-spacing: .02em;
+      font-size: 15px;
+    }
+    .brand-tagline {
+      font-size: 12px;
+      color: var(--muted);
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+    }
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      padding: 2px 6px;
+      border-radius: 999px;
+      transition: all .16s ease-out;
+    }
+    nav a:hover {
+      color: var(--accent);
+      background: var(--accent-soft);
+    }
+    .nav-cta {
+      border-radius: 999px;
+      border: none;
+      padding: 3px 8px;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 13px;
+      background: transparent;
+    }
+    main {
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .hero-card {
+      background: rgba(255,255,255,0.96);
+      border-radius: 20px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 20px 45px rgba(15,23,42,.08);
+      padding: 20px 18px 18px;
+    }
+    @media (min-width: 768px) {
+      .hero-card { padding: 24px 24px 20px; }
+    }
+    .hero-top {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+    @media (max-width: 640px) {
+      .hero-top { align-items: flex-start; }
+    }
+    .avatar {
+      min-width: 68px;
+      height: 68px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #2563eb, #0ea5e9);
+      color: #f9fafb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 24px;
+    }
+    .hero-main { flex: 1; }
+    .name {
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      letter-spacing: .02em;
+    }
+    .title {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+    .summary {
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+    .summary p { margin: 0 0 8px; }
+    .summary p:last-child { margin-bottom: 0; }
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+    .chip {
+      border-radius: 999px;
+      border: 1px solid var(--border-subtle);
+      padding: 3px 9px;
+      font-size: 11px;
+      color: var(--muted);
+      background: #f9fafb;
+    }
+    .chip-primary {
+      border-color: rgba(37,99,235,.4);
+      background: #eff6ff;
+      color: #1d4ed8;
+    }
+    .link-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 11px;
+      border-radius: 999px;
+      border: 1px solid var(--border-subtle);
+      background: #ffffff;
+      color: var(--fg);
+      font-size: 12px;
+      text-decoration: none;
+      transition: all .16s ease-out;
+    }
+    .link-btn span.icon { font-size: 14px; }
+    .link-btn:hover {
+      border-color: rgba(37,99,235,.5);
+      background: #eff6ff;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 20px rgba(15,23,42,.07);
+    }
+    .section-label {
+      margin-top: 8px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      color: var(--muted);
+    }
+    .section-card {
+      margin-top: 8px;
+      background: rgba(255,255,255,0.95);
+      border-radius: 16px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 14px 32px rgba(15,23,42,.06);
+      padding: 14px 14px 12px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .section-card h2 {
+      margin: 0 0 6px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--fg);
+    }
+    .project-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 4px;
+    }
+    .project-item {
+      border-radius: 12px;
+      border: 1px solid #e5e7eb;
+      padding: 8px 9px;
+      background: linear-gradient(135deg, #ffffff, #f9fafb);
+    }
+    .project-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      margin-bottom: 2px;
+    }
+    .project-title {
+      font-weight: 500;
+    }
+    .project-meta-small {
+      font-size: 11px;
+      color: var(--muted);
+    }
+    .project-desc {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 6px;
+      font-size: 11px;
+    }
+    .project-tag {
+      padding: 2px 6px;
+      border-radius: 999px;
+      background: #f3f4f6;
+      border: 1px solid #e5e7eb;
+      color: #4b5563;
+    }
+    footer {
+      margin-top: 26px;
+      font-size: 11px;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="brand-row">
+        <div class="brand">
+          <div class="brand-mark"></div>
+          <div class="brand-text">
+            <div class="brand-name"><%= theme.profile?.name || '晏瑞然' %></div>
+            <div class="brand-tagline">Personal site</div>
+          </div>
+        </div>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-card" id="about">
+        <div class="hero-top">
+          <div class="avatar">RY</div>
+          <div class="hero-main">
+            <div class="name"><%= theme.profile?.name || '晏瑞然' %></div>
+            <div class="title"><%= theme.profile?.title || 'Student & developer, turning ideas into projects.' %></div>
+            <div class="summary">
+              <p>目前就读于中国科学技术大学人工智能与数据科学学院硕士，大数据技术与工程专业，本科毕业于中科大少年班学院。研究方向聚焦于 <strong>多任务学习、多模态大模型、表征学习与推理增强</strong>。</p>
+              <p>本科阶段主要做推荐系统与多任务学习，在 OPPO 实习期间参与工业级多任务模型 PLE 的优化。研究生阶段先后在 <strong>北京智源研究院（BAAI）</strong> 和 <strong>字节跳动-抖音搜索</strong> 实习，围绕多模态生成与表征大模型、个性化预训练大模型、LLM4Rec 落地等方向深入实践，兼顾学术创新与工程落地。</p>
+            </div>
+            <div class="chip-row">
+              <span class="chip chip-primary">Multitask Learning</span>
+              <span class="chip">Multimodal Models</span>
+              <span class="chip">Representation & Reasoning</span>
+            </div>
+            <div class="link-buttons">
+              <% if (theme.profile?.github) { %>
+                <a class="link-btn" href="<%= theme.profile.github %>" target="_blank" rel="noreferrer">
+                  <span class="icon">💻</span><span>GitHub</span>
+                </a>
+              <% } %>
+              <% if (theme.profile?.email) { %>
+                <a class="link-btn" href="mailto:<%= theme.profile.email %>">
+                  <span class="icon">✉️</span><span>Email</span>
+                </a>
+              <% } %>
+              <a class="link-btn" href="https://scholar.google.com/citations?user=-0bU5SwAAAAJ" target="_blank" rel="noreferrer">
+                <span class="icon">📚</span><span>Google Scholar</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-label" id="projects">Projects</div>
+      <section class="section-card">
+        <h2>研究与模型</h2>
+        <div class="project-list">
+          <div class="project-item">
+            <div class="project-title-row">
+              <span class="project-title">OmniGen / OmniGen2 — 通用图像生成与主体驱动数据</span>
+            </div>
+            <div class="project-desc">
+              在北京智源研究院参与 OmniGen 系列项目，目标是构建统一的图像生成模型，支持文本到图像生成、图像编辑以及多种视觉任务，并通过统一框架实现跨任务的知识迁移。负责从零搭建主体驱动多模态数据工作流（GroundingDINO + SAM / SAM2 + Outpaint），构建大规模主体驱动数据集 X2I / X2I2，并基于此训练 OmniGen V1 / V2，大幅提升主体一致性与生成自然度。
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Multimodal</span>
+              <span class="project-tag">Image Generation</span>
+              <span class="project-tag">BAAI</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div class="project-title-row">
+              <span class="project-title">O1Embedder — 让检索模型先“想一想”</span>
+            </div>
+            <div class="project-desc">
+              面对复杂多步推理任务，传统表征模型难以直接利用推理型大模型的能力。O1Embedder 通过构造长思维链数据，将大模型“思考过程”转化为监督信号，并用多任务学习统一推理与表征能力，使检索模型在复杂推理和 zero-shot 场景下具备更强的理解与泛化能力。
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Representation</span>
+              <span class="project-tag">Reasoning</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div class="project-title-row">
+              <span class="project-title">多任务推荐与工业级模型迭代</span>
+            </div>
+            <div class="project-desc">
+              在 OPPO 与后续工作中，围绕多任务推荐模型与工业级系统迭代进行了多轮优化：在信息流及应用商店分发搜索主场景下，对公司多任务模型 PLE 引入表征解耦与辅助蒸馏机制，缓解任务间负迁移问题，并通过优化 Gate 网络结构，在控制模型复杂度的同时取得可观的 AUC 提升和线上收益。
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Recommender Systems</span>
+              <span class="project-tag">Multitask</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card">
+        <h2>工程实践与开源</h2>
+        <div class="project-list">
+          <div class="project-item">
+            <div class="project-title-row">
+              <span class="project-title">字节跳动 · 抖音搜索 — 个性化预训练大模型 / LLM4Rec</span>
+            </div>
+            <div class="project-desc">
+              在抖音搜索多模态预训练方向，围绕“个性化预训练大模型”展开工作：通过多模态表征构建、RQ-VAE / RQKmeans 量化分词以及表征回写方案，构建适配抖音域内的视频表征模型，并将其应用于精排与长序列检索，在严点 QAUC、主动点 QAUC 等指标上取得持续增益。
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">LLM4Rec</span>
+              <span class="project-tag">Multimodal</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div class="project-title-row">
+              <span class="project-title">Agent-R1 — 面向 Agent 系统的强化学习框架</span>
+            </div>
+            <div class="project-desc">
+              作为开源项目 Agent-R1 的核心贡献者之一，参与设计用于 agentic system 的端到端强化学习训练框架，支持多轮对话、多工具调用等复杂场景，并在 PPO / GRPO 等主流算法上做了适配和修正，推动大模型在真实任务上的强化学习训练实践。
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Agent</span>
+              <span class="project-tag">RL</span>
+              <span class="project-tag">Open Source</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div class="project-title-row">
+              <span class="project-title">Meta KDD Cup 2024 · CRAG: Comprehensive RAG Benchmark</span>
+            </div>
+            <div class="project-desc">
+              在 Meta KDD Cup 2024 CRAG 赛道中，围绕复杂现实场景的检索增强生成系统设计方案：通过 query 域分类与实体抽取、结合知识图谱的数据重写，以及大模型自验证机制，提升 RAG 系统在复杂问题与噪声环境下的鲁棒性与可信度，最终取得全球第四与复杂问题特别奖。
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">RAG</span>
+              <span class="project-tag">Competition</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card" id="contact">
+        <h2>Contact</h2>
+        <div class="project-desc">
+          如果你对我的研究方向、实习经历或项目感兴趣，或者有合作与交流的想法，可以通过以下方式联系我：
+        </div>
+        <div class="project-list">
+          <div class="project-item">
+            <div class="project-desc">
+              Email：yanruiran@mail.ustc.edu.cn
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-desc">
+              GitHub：https://github.com/Ruiranyan
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-desc">
+              Google Scholar：https://scholar.google.com/citations?user=-0bU5SwAAAAJ
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <%= new Date().getFullYear() %> <%= theme.profile?.name || '晏瑞然' %></span>
+      <span>Built with Hexo · Deployed on GitHub Pages</span>
+    </footer>
+  </div>
+</body>
+</html>
