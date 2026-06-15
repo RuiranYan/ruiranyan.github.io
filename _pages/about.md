@@ -1,12 +1,15 @@
 ---
 permalink: /
 title: "主页"
+hide_title: true
 excerpt: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+# 👋 About Me
 
 目前就读于中国科学技术大学人工智能与数据科学学院硕士，大数据技术与工程专业，本科毕业于中科大少年班学院。研究方向包含 **多任务学习、多模态大模型、表征学习与推理增强**。
 
