@@ -23,8 +23,8 @@ main:
   # - title: "Blog Posts"
   #   url: /year-archive/
 
-  - title: "Homepage"
-    url: /homepage/
+  - title: "主页"
+    url: /
     
   # - title: "CV"
   #   url: /cv/
