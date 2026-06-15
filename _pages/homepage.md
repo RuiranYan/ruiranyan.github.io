@@ -39,7 +39,7 @@ If you are interested in my research, internship experience, or projects, or if 
 
 * **O1Embedder - Let Retrieval Models Think Before Retrieval**
   * Traditional representation models often struggle to leverage reasoning-oriented LLMs on complex multi-step reasoning tasks. O1Embedder converts the reasoning process of large models into supervised signals by constructing long chain-of-thought data, and unifies reasoning and representation learning through multi-task learning, enabling retrieval models to achieve stronger understanding and generalization in complex reasoning and zero-shot scenarios.
-  * *Links: [Paper](https://arxiv.org/abs/2502.07555)*
+  * *Links: [Paper](https://arxiv.org/abs/2502.07555), [GitHub](https://github.com/RuiranYan/o1embedder)*
   * *Tags: Representation Learning, Reasoning*
 
 💼 Engineering & Internship Experience

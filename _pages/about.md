@@ -40,7 +40,7 @@ redirect_from:
 
 * **O1Embedder — 让检索模型先思考再检索**
   * 面对复杂多步推理任务，传统表征模型难以直接利用推理型大模型的能力。O1Embedder 通过构造长思维链数据，将大模型“思考过程”转化为监督信号，并用多任务学习统一推理与表征能力，使检索模型在复杂推理和 zero-shot 场景下具备更强的理解与泛化能力。
-  * *Links: [Paper](https://arxiv.org/abs/2502.07555)*
+  * *Links: [Paper](https://arxiv.org/abs/2502.07555), [GitHub](https://github.com/RuiranYan/o1embedder)*
   * *Tags: Representation Learning, Reasoning*
 
 💼 Engineering & Internship experience
