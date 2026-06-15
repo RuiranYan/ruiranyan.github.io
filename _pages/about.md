@@ -30,14 +30,17 @@ redirect_from:
 ======
 * **OmniGen / OmniGen2 — 通用图像生成与理解模型**
   * OmniGen 系列项目核心贡献者之一，目标是构建统一的图像生成与理解模型，支持文本到图像生成、图像编辑以及多种视觉任务，并通过统一框架实现跨任务的知识迁移。负责从零搭建主体驱动多模态数据工作流（GroundingDINO + SAM / SAM2 + Outpaint），构建大规模主体驱动数据集 X2I / X2I2，并基于此训练 OmniGen V1 / V2，大幅提升主体一致性与生成自然度。
+  * *Links: [OmniGen Paper](https://arxiv.org/abs/2409.11340), [OmniGen GitHub](https://github.com/VectorSpaceLab/OmniGen), [OmniGen2 Paper](https://arxiv.org/abs/2506.18871), [OmniGen2 GitHub](https://github.com/VectorSpaceLab/OmniGen2)*
   * *Tags: Multimodal, Image Generation, BAAI*
 
 * **Agent-R1 — 面向 Agent 系统的强化学习框架**
   * 作为开源项目 Agent-R1 的核心贡献者之一，参与设计用于 agentic system 的端到端强化学习训练框架，支持多轮对话、多工具调用等复杂场景，并在 PPO / GRPO 等主流算法上做了适配和修正，推动大模型在真实任务上的强化学习训练实践。
+  * *Links: [Paper](https://arxiv.org/abs/2511.14460), [GitHub](https://github.com/AgentR1/Agent-R1)*
   * *Tags: Agent, RL, Open Source*
 
 * **O1Embedder — 让检索模型先思考再检索**
   * 面对复杂多步推理任务，传统表征模型难以直接利用推理型大模型的能力。O1Embedder 通过构造长思维链数据，将大模型“思考过程”转化为监督信号，并用多任务学习统一推理与表征能力，使检索模型在复杂推理和 zero-shot 场景下具备更强的理解与泛化能力。
+  * *Links: [Paper](https://arxiv.org/abs/2502.07555)*
   * *Tags: Representation Learning, Reasoning*
 
 💼 Engineering & Internship experience
