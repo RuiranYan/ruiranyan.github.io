@@ -16,7 +16,7 @@ This is a Jekyll-based Academic Pages site. Site-wide settings live in `_config.
 ## Homepage Update SOP
 
 1. Enter the repository: `cd /Users/yrr/Documents/resume/ruiranyan.github.io`.
-2. Edit homepage content in `_pages/about.md`. This is the main page and currently contains About Me, education, projects, internships, awards, and skills.
+2. Edit homepage content in both language files: `_pages/about.md` for Chinese and `_pages/homepage.md` for English. Keep sections, facts, dates, links, and project descriptions synchronized unless the user explicitly asks for language-specific differences.
 3. Edit sidebar/profile metadata in `_config.yml`, especially `title`, `name`, `description`, and fields under `author:` such as `avatar`, `bio`, `location`, `employer`, `email`, `github`, and `googlescholar`.
 4. Put profile images and site images in `images/`. Put PDFs, resumes, slides, and public downloads in `files/`.
 5. Preview locally with `bundle exec jekyll serve -H localhost -P 4000 --livereload`, then open `http://localhost:4000`.
@@ -25,7 +25,7 @@ This is a Jekyll-based Academic Pages site. Site-wide settings live in `_config.
 8. Commit focused changes, for example:
 
 ```bash
-git add _pages/about.md _config.yml images files
+git add _pages/about.md _pages/homepage.md _config.yml images files
 git commit -m "Update homepage content"
 ```
 
