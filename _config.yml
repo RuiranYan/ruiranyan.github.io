@@ -23,7 +23,7 @@ repository               : "RuiranYan/ruiranyan.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile-white.png"
   name             : "晏瑞然"
   pronouns         : # example: "she/her"  
   bio              : "Student & developer, turning ideas into projects."

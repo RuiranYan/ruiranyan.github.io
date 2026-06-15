@@ -13,6 +13,24 @@ This is a Jekyll-based Academic Pages site. Site-wide settings live in `_config.
 - `npm run build:js`: regenerate `assets/js/main.min.js` from vendored scripts and `assets/js/_main.js`.
 - `docker compose up`: alternative local preview using the provided Docker setup.
 
+## Homepage Update SOP
+
+1. Enter the repository: `cd /Users/yrr/Documents/resume/ruiranyan.github.io`.
+2. Edit homepage content in `_pages/about.md`. This is the main page and currently contains About Me, education, projects, internships, awards, and skills.
+3. Edit sidebar/profile metadata in `_config.yml`, especially `title`, `name`, `description`, and fields under `author:` such as `avatar`, `bio`, `location`, `employer`, `email`, `github`, and `googlescholar`.
+4. Put profile images and site images in `images/`. Put PDFs, resumes, slides, and public downloads in `files/`.
+5. Preview locally with `bundle exec jekyll serve -H localhost -P 4000 --livereload`, then open `http://localhost:4000`.
+6. Run `bundle exec jekyll build` before committing to catch Jekyll, Markdown, or Liquid errors.
+7. Review changes with `git status` and `git diff`.
+8. Commit focused changes, for example:
+
+```bash
+git add _pages/about.md _config.yml images files
+git commit -m "Update homepage content"
+```
+
+9. Deploy by pushing to GitHub Pages: `git push origin master`. After a successful push, wait a few minutes and check `https://ruiranyan.github.io`.
+
 ## Coding Style & Naming Conventions
 
 Use Markdown front matter consistently for pages and collection items. Keep filenames date-prefixed where Jekyll expects dates, for example `_posts/YYYY-MM-DD-title.md` and `_publications/YYYY-MM-DD-title.md`. Prefer two-space indentation in YAML and Liquid templates. Keep custom includes small and reusable, and avoid editing minified assets directly; update source JavaScript and run `npm run build:js`.
