@@ -1,9 +1,11 @@
 ---
-permalink: /homepage/
+permalink: /
 title: "Homepage"
 hide_title: true
 excerpt: "Homepage"
 author_profile: true
+redirect_from:
+  - /homepage/
 ---
 
 # 👋 About Me

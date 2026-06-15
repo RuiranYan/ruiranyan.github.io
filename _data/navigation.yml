@@ -24,7 +24,7 @@ main:
   #   url: /year-archive/
 
   - title: "主页"
-    url: /
+    url: /zh/
     
   # - title: "CV"
   #   url: /cv/

@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /zh/
 title: "主页"
 hide_title: true
 excerpt: "About Me"
@@ -44,7 +44,7 @@ redirect_from:
 ======
 * **[2026.03 ~ 2026.05] - 小红书 · 国际化 - AI搜 / Agentic Search**
 
-* **[2025.05 ~ 2026.03] - 字节跳动 · 抖音搜索 — 个性化预训练大模型 / 生成式搜推 / LLM4REC**
+* **[2025.05 ~ 2026.03] - 字节跳动 · 抖音搜索 - 个性化预训练大模型 / 生成式搜推 / LLM4REC**
 
 * **[2024.07 ~ 2025.05] - 北京智源研究院 · 研究实习 - 表征模型 / 多模态生成理解**
 
@@ -54,4 +54,3 @@ redirect_from:
 ======
 
 * **Meta KDD Cup 2024 · CRAG: Comprehensive RAG Benchmark** - **全球TOP4**(共3000+参与者) / **复杂问题特别奖**(500刀奖金)。
-
