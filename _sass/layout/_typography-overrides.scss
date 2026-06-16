@@ -1,0 +1,87 @@
+/* ==========================================================================
+   TYPOGRAPHY OVERRIDES
+   ========================================================================== */
+
+$profile-sans: "Avenir Next", "Nunito Sans", "Inter", "Segoe UI", "PingFang SC",
+  "Noto Sans SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: $profile-sans;
+  font-weight: 500;
+  line-height: 1.58;
+  letter-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.masthead,
+.sidebar,
+.page__content {
+  font-family: $profile-sans;
+}
+
+h1,
+h2,
+h3,
+.page__content strong,
+.page__content b {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1.95em;
+}
+
+h2 {
+  font-size: 1.45em;
+}
+
+h3 {
+  font-size: 1.15em;
+}
+
+.page__content {
+  font-size: 0.96rem;
+  line-height: 1.62;
+}
+
+.page__content p,
+.page__content li {
+  color: var(--global-text-color);
+}
+
+.page__content li {
+  margin-bottom: 0.42em;
+}
+
+.sidebar p,
+.sidebar li,
+.sidebar .author__bio {
+  font-size: 0.78rem;
+}
+
+.sidebar .author__name {
+  font-family: $profile-sans;
+  font-size: 0.98rem;
+  font-weight: 700;
+}
+
+.sidebar .author__bio,
+.sidebar .author__urls,
+.masthead__menu-item,
+.masthead__menu-item a {
+  font-family: $profile-sans;
+}
+
+.masthead__menu-item {
+  font-size: 0.92rem;
+  font-weight: 700;
+}
