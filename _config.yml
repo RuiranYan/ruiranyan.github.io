@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "晏瑞然"
 title_separator          : "-"
 name                     : &name "晏瑞然"
-description              : &description "Student & developer, turning ideas into projects."   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Researcher & developer, turning ideas into projects."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://ruiranyan.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,9 +26,9 @@ author:
   avatar           : "profile-white.png"
   name             : "Ruiran Yan(晏瑞然)"
   pronouns         : # example: "she/her"  
-  bio              : "Master @ USTC & Developer<br><em>Turning ideas into projects.</em>"
-  location         : "Hefei, China"
-  employer         : "USTC"
+  bio              : "Researcher @ Tencent Hunyuan<br><em>Turning ideas into projects.</em>"
+  location         : "China"
+  employer         : "Tencent Hunyuan"
   uri              : # URL
   email            : "yanruiran@mail.ustc.edu.cn" 
 

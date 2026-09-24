@@ -10,11 +10,11 @@ redirect_from:
 
 # 👋 About Me
 
-I am a master's student at the School of Artificial Intelligence and Data Science, University of Science and Technology of China, expected to graduate in 2026. I received my bachelor's degree from the School of the Gifted Young, USTC. My research interests include **multi-task learning, representation learning, multimodal generation and understanding, and Agentic RL**.
+I received my master's degree from the School of Artificial Intelligence and Data Science, University of Science and Technology of China (USTC), and my bachelor's degree from the School of the Gifted Young, USTC. I am currently working at the **Tencent Hunyuan Multimodal Team**, focusing on image and video generation. My research interests include **multimodal generation and understanding, representation learning, multi-task learning, and Agentic RL**.
 
 I previously interned at **Beijing Academy of Artificial Intelligence (BAAI)**, **ByteDance**, and **Xiaohongshu**, working on multimodal generation and understanding, representation foundation models, generative search and recommendation, and AI search. My projects combine academic innovation with engineering impact.
 
-If you are interested in my research, internship experience, or projects, or if you would like to discuss potential collaboration, feel free to contact me:
+If you are interested in my research, work experience, or projects, or if you would like to discuss potential collaboration, feel free to contact me:
 * Phone: +86 17362950656
 * Email: yanruiran@mail.ustc.edu.cn
 * GitHub: [RuiranYan](https://github.com/RuiranYan)
@@ -22,7 +22,7 @@ If you are interested in my research, internship experience, or projects, or if 
 
 🎓 Education
 ======
-* **M.Eng.**, School of Artificial Intelligence and Data Science, University of Science and Technology of China (ongoing)
+* **M.Eng.**, School of Artificial Intelligence and Data Science, University of Science and Technology of China
 * **B.S.**, School of the Gifted Young, University of Science and Technology of China
 
 🚀 Selected Projects & Publications
@@ -42,8 +42,10 @@ If you are interested in my research, internship experience, or projects, or if 
   * *Links: [Paper](https://arxiv.org/abs/2502.07555), [GitHub](https://github.com/RuiranYan/o1embedder)*
   * *Tags: Representation Learning, Reasoning*
 
-💼 Engineering & Internship Experience
+💼 Work & Internship Experience
 ======
+* **[2026.07 ~ Present] - Tencent · Hunyuan Multimodal Team - Image & Video Generation**
+
 * **[2026.03 ~ 2026.05] - Xiaohongshu · Internationalization - AI Search / Agentic Search**
 
 * **[2025.05 ~ 2026.03] - ByteDance · Douyin Search - Personalized Pre-trained Models / Generative Search and Recommendation / LLM4Rec**
