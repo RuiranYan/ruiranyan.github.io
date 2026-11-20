@@ -11,9 +11,9 @@ redirect_from:
 
 # 👋 About Me
 
-我硕士毕业于中国科学技术大学人工智能与数据科学学院，本科毕业于中国科学技术大学少年班学院。现就职于 **腾讯混元（Hunyuan）多模态团队**，从事图像与视频生成（Image and Video Generation）相关的研究与工程落地。研究方向包含 **多模态生成与理解，表征学习，多任务学习，Agentic RL**。
+我目前就职于 **腾讯混元（Hunyuan）多模态团队**，担任算法研究员，主要从事 **视频生成（Video Generation）** 相关的研究与工程落地。我硕士毕业于中国科学技术大学人工智能与数据科学学院，本科毕业于中国科学技术大学少年班学院。研究方向包含 **多模态生成与理解、视频与图像生成、表征学习、多任务学习与 Agentic RL**。
 
-此前先后在 **北京智源研究院（BAAI）** 、 **字节跳动** 和 **小红书** 等公司实习，围绕多模态生成与理解、表征大模型、生成式搜推和AI搜方向深入实践，项目兼顾学术创新与工程落地。
+此前先后在 **北京智源研究院（BAAI）**、**字节跳动** 和 **小红书** 等团队实习，围绕多模态生成与理解、表征大模型、生成式搜推和 AI 搜索方向深入实践，项目兼顾学术创新与工程落地。
 
 如果你对我的研究方向、工作经历或项目感兴趣，或者有合作与交流的想法，可以通过以下方式联系我：
 * Phone：+86 17362950656
@@ -21,10 +21,15 @@ redirect_from:
 * GitHub：[RuiranYan](https://github.com/RuiranYan)
 * Google Scholar：[Ruiran Yan](https://scholar.google.com/citations?user=-0bU5SwAAAAJ)
 
+💼 Work Experience
+======
+* **[2026.07 ~ 至今] 腾讯 · 混元多模态团队 — 算法研究员（全职）**
+  * 主要从事视频生成（Video Generation）方向的模型研究与工程落地。
+
 🎓 Education
 ======
-* **硕士**, 人工智能与数据科学学院, 中国科学技术大学
-* **学士**, 少年班学院, 中国科学技术大学
+* **[2023.09 ~ 2026.06] 硕士**, 人工智能与数据科学学院, 中国科学技术大学
+* **[2019.09 ~ 2023.06] 学士**, 少年班学院, 中国科学技术大学
 
 🚀 Selected Projects & Publications
 ======
@@ -43,17 +48,15 @@ redirect_from:
   * *Links: [Paper](https://arxiv.org/abs/2502.07555), [GitHub](https://github.com/RuiranYan/o1embedder)*
   * *Tags: Representation Learning, Reasoning*
 
-💼 Work & Internship Experience
+🏢 Internship Experience
 ======
-* **[2026.07 ~ 至今] - 腾讯 · 混元多模态团队 - 图像与视频生成 (Image & Video Generation)**
+* **[2026.03 ~ 2026.05]** 小红书 · 国际化 — AI搜 / Agentic Search
 
-* **[2026.03 ~ 2026.05] - 小红书 · 国际化 - AI搜 / Agentic Search**
+* **[2025.05 ~ 2026.03]** 字节跳动 · 抖音搜索 — 个性化预训练大模型 / 生成式搜推 / LLM4Rec
 
-* **[2025.05 ~ 2026.03] - 字节跳动 · 抖音搜索 - 个性化预训练大模型 / 生成式搜推 / LLM4REC**
+* **[2024.07 ~ 2025.05]** 北京智源研究院（BAAI） · 研究实习 — 表征模型 / 多模态生成与理解
 
-* **[2024.07 ~ 2025.05] - 北京智源研究院 · 研究实习 - 表征模型 / 多模态生成理解**
-
-* **[2022.10 ~ 2023.07] - OPPO · 应用商城 - 多任务推荐**
+* **[2022.10 ~ 2023.07]** OPPO · 应用商城 — 多任务推荐
 
 🏆 Competitions & Awards
 ======

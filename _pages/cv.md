@@ -9,10 +9,16 @@ redirect_from:
 
 {% include base_path %}
 
+Work Experience
+======
+* **[2026.07 ~ 至今] 腾讯 · 混元多模态团队 — 算法研究员（全职）**
+  * 主要从事视频生成（Video Generation）方向的模型研究与工程落地。
+  * *Tags: Multimodal, Video Generation*
+
 Education
 ======
-* **硕士**, 大数据技术与工程, 中国科学技术大学人工智能与数据科学学院
-* **学士**, 中科大少年班学院, 中国科学技术大学
+* **[2023.09 ~ 2026.06] 硕士**, 大数据技术与工程, 中国科学技术大学人工智能与数据科学学院
+* **[2019.09 ~ 2023.06] 学士**, 中科大少年班学院, 中国科学技术大学
 
 Projects & Open Source
 ======
@@ -28,12 +34,8 @@ Projects & Open Source
   * 面对复杂多步推理任务，传统表征模型难以直接利用推理型大模型的能力。O1Embedder 通过构造长思维链数据，将大模型“思考过程”转化为监督信号，并用多任务学习统一推理与表征能力，使检索模型在复杂推理和 zero-shot 场景下具备更强的理解与泛化能力。
   * *Tags: Representation, Reasoning*
 
-Work & Internship Experience
+Internship Experience
 ======
-
-* **腾讯 · 混元多模态团队 — 图像与视频生成 (Image & Video Generation)**
-  * 负责多模态生成模型的研究与落地工作，主要聚焦于图像与视频生成（Image & Video Generation）。
-  * *Tags: Multimodal, Image Generation, Video Generation*
 
 * **字节跳动 · 抖音搜索 — 个性化预训练大模型 / LLM4Rec**
   * 在抖音搜索多模态预训练方向，围绕“个性化预训练大模型”展开工作：通过多模态表征构建、RQ-VAE / RQKmeans 量化分词以及表征回写方案，构建适配抖音域内的视频表征模型，并将其应用于精排与长序列检索，在严点 QAUC、主动点 QAUC 等指标上取得线上收益。

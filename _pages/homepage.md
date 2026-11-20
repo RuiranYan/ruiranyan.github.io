@@ -10,9 +10,9 @@ redirect_from:
 
 # 👋 About Me
 
-I received my master's degree from the School of Artificial Intelligence and Data Science, University of Science and Technology of China (USTC), and my bachelor's degree from the School of the Gifted Young, USTC. I am currently working at the **Tencent Hunyuan Multimodal Team**, focusing on image and video generation. My research interests include **multimodal generation and understanding, representation learning, multi-task learning, and Agentic RL**.
+I am currently a Researcher at the **Tencent Hunyuan Multimodal Team**, mainly focusing on **video generation** research and engineering. I received my master's degree from the School of Artificial Intelligence and Data Science, University of Science and Technology of China (USTC), and my bachelor's degree from the School of the Gifted Young, USTC. My research interests include **multimodal generation and understanding, video and image generation, representation learning, multi-task learning, and Agentic RL**.
 
-I previously interned at **Beijing Academy of Artificial Intelligence (BAAI)**, **ByteDance**, and **Xiaohongshu**, working on multimodal generation and understanding, representation foundation models, generative search and recommendation, and AI search. My projects combine academic innovation with engineering impact.
+Previously, I interned at **Beijing Academy of Artificial Intelligence (BAAI)**, **ByteDance**, and **Xiaohongshu**, working on multimodal generation and understanding, representation foundation models, generative search and recommendation, and AI search. My work combines academic innovation with engineering impact.
 
 If you are interested in my research, work experience, or projects, or if you would like to discuss potential collaboration, feel free to contact me:
 * Phone: +86 17362950656
@@ -20,10 +20,15 @@ If you are interested in my research, work experience, or projects, or if you wo
 * GitHub: [RuiranYan](https://github.com/RuiranYan)
 * Google Scholar: [Ruiran Yan](https://scholar.google.com/citations?user=-0bU5SwAAAAJ)
 
+💼 Work Experience
+======
+* **[2026.07 ~ Present] Tencent · Hunyuan Multimodal Team — Researcher (Full-time)**
+  * Mainly focusing on video generation model research and deployment.
+
 🎓 Education
 ======
-* **M.Eng.**, School of Artificial Intelligence and Data Science, University of Science and Technology of China
-* **B.S.**, School of the Gifted Young, University of Science and Technology of China
+* **[2023.09 ~ 2026.06] M.Eng.**, School of Artificial Intelligence and Data Science, University of Science and Technology of China
+* **[2019.09 ~ 2023.06] B.S.**, School of the Gifted Young, University of Science and Technology of China
 
 🚀 Selected Projects & Publications
 ======
@@ -42,17 +47,15 @@ If you are interested in my research, work experience, or projects, or if you wo
   * *Links: [Paper](https://arxiv.org/abs/2502.07555), [GitHub](https://github.com/RuiranYan/o1embedder)*
   * *Tags: Representation Learning, Reasoning*
 
-💼 Work & Internship Experience
+🏢 Internship Experience
 ======
-* **[2026.07 ~ Present] - Tencent · Hunyuan Multimodal Team - Image & Video Generation**
+* **[2026.03 ~ 2026.05]** Xiaohongshu · Internationalization — AI Search / Agentic Search
 
-* **[2026.03 ~ 2026.05] - Xiaohongshu · Internationalization - AI Search / Agentic Search**
+* **[2025.05 ~ 2026.03]** ByteDance · Douyin Search — Personalized Pre-trained Models / Generative Search and Recommendation / LLM4Rec
 
-* **[2025.05 ~ 2026.03] - ByteDance · Douyin Search - Personalized Pre-trained Models / Generative Search and Recommendation / LLM4Rec**
+* **[2024.07 ~ 2025.05]** Beijing Academy of Artificial Intelligence (BAAI) · Research Intern — Representation Models / Multimodal Generation and Understanding
 
-* **[2024.07 ~ 2025.05] - Beijing Academy of Artificial Intelligence · Research Intern - Representation Models / Multimodal Generation and Understanding**
-
-* **[2022.10 ~ 2023.07] - OPPO · App Store - Multi-task Recommendation**
+* **[2022.10 ~ 2023.07]** OPPO · App Store — Multi-task Recommendation
 
 🏆 Competitions & Awards
 ======
